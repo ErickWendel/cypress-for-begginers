@@ -48,7 +48,6 @@ describe('Image Registration', () => {
 
     it(`Then I enter "${input.url}" in the URL field`, () => {
       registerForm.typeUrl(input.url)
-
     })
 
     it('Then I click the submit button', () => {
