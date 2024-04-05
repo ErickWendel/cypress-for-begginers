@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-js-web-app-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:web": "npx cypress open --browser electron",
+    "cypress:headless": "npx cypress run",
+    "cypress:electron" : "cypress run --browser electron "
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v20.12.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.7.2"
+  }
+}
