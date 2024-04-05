@@ -1,0 +1,69 @@
+go to https://github.com/ErickWendel/vanilla-js-web-app-example/
+go to https://github.com/ErickWendel/vanilla-js-web-app-example/blob/main/app.feature
+
+mkdir class-project
+
+node -v # v20.12.1
+npm init -y
+npm pkg set type=module engines.node=$(node -v) author=erickwendel
+touch app.feature
+    paste from https://github.com/ErickWendel/vanilla-js-web-app-example/blob/main/app.feature
+
+npm i -D cypress@13.7.2
+package.json
+    "cypress:web": "npx cypress open",
+    "cypress:headless": "npx cypress run --browser electron"
+
+npm i -g ntl
+    ntl
+    npm run crypress:web
+
+electron -> sample spec
+
+go to cypress.config.js
+    add
+        "chromeWebSecurity": false,
+        "experimentalModuleVariables": true,
+        e2e : {
+            baseUrl: 'https://erickwendel.github.io/vanilla-js-web-app-example',
+            testIsolation: false,
+        }
+
+show how to get title from the page by inspecting it
+
+e2e/app.cy.js
+    first describe with all its empty
+    first it
+    -> should see the webpage
+
+    class RegisterForm
+        all elements
+        typeTitle
+    second it
+    -> should see typing
+
+    registerForm
+        typeUrl
+        clickSubmit
+        hitEnter
+
+    second it
+    -> should see typing
+
+    third it
+    -> should see typing
+
+    fourth it
+    -> should see submiting and errors
+
+    all
+
+    ntl
+        - headless
+    duplicate ci file
+        change to the new folder
+    upload to github
+    see results
+
+    done :)
+
