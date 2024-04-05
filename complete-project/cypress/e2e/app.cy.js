@@ -174,7 +174,6 @@ describe('Image Registration', () => {
           title: input.title,
           imageUrl: input.url,
         })
-
       })
     })
 
