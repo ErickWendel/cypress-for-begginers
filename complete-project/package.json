@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:web": "npx cypress open --browser electron",
-    "cypress:headless": "npx cypress run",
-    "cypress:electron" : "cypress run --browser electron "
+    "cypress:web": "npx cypress open",
+    "cypress:headless": "npx cypress run --browser electron"
   },
   "keywords": [],
   "author": "erickwendel",
