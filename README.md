@@ -4,3 +4,5 @@
 
 
 <!-- [![Cypress Tests - Clss Project](https://github.com/ErickWendel/cypress-for-begginers/actions/workflows/cypress-clss-project.yml/badge.svg)](https://github.com/ErickWendel/cypress-for-begginers/actions/workflows/cypress-class-project.yml) -->
+
+![ci print results](./ci-print.png)
